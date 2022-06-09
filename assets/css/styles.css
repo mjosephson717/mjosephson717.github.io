@@ -94,7 +94,7 @@ i{
 .container {
   max-width: 65%;
   margin: auto;
-  border: 3px solid #000;
+  /*border: 3px solid #000;*/
 }
 
 .flex{
