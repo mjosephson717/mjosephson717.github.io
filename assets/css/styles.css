@@ -92,8 +92,9 @@ i{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 65%;
   margin: auto;
+  border: 3px solid #000;
 }
 
 .flex{
