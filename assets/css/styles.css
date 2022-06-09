@@ -1,0 +1,256 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /* Insert your colors */
+  --back-color: #FFF;
+  --back-color-left: #062a60;
+  --back-color-right: rgb(255, 245, 232);
+  --color: #ffa470;
+  --color-icon: #91dadd;
+  --light-color: #fff2ea;
+  --dark-color: #062a60;
+  --text-color-dark: #000;
+  --text-color-light: #FFF;
+  
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+/* set up the basics that will be useful for the whole HTML page */
+* {
+  box-sizing: border-box;
+  /* remove default padding and margin */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--back-color);
+  color: var(--text-color-dark);
+  transition: .3s; /* For animation dark mode */
+}
+
+/* titles */
+h1{
+  color: var(--dark-color);
+}
+
+h2, h3, h4{
+  color: var(--color);
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  color: var(--back-color);
+  font-size: var(--smaller-font-size);
+}
+
+/* images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* text */
+p{
+  font-size: var(--smaller-font-size);
+}
+
+/* icon */
+i{
+  margin: 0.8rem;
+  color: var(--color-icon);
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 968px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*=============== MAIN ===============*/
+/*============= MAIN GRID ============*/
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, auto);
+  }
+
+.parent>div{
+  padding: 1.5rem;
+}
+  
+.profile__perfil { 
+  grid-area: 1 / 1 / 2 / 2; 
+  background-color: var(--back-color-left);
+}
+.profile-name { 
+  grid-area: 1 / 2 / 2 / 3; 
+  background-color: var(--back-color-right);
+}
+.contact_me { 
+  grid-area: 2 / 1 / 3 / 2; 
+  background-color: var(--back-color-left);
+  color: var(--text-color-light);
+}
+.skills { 
+  grid-area: 3 / 1 / 4 / 2; 
+  background-color: var(--back-color-left);
+  color: var(--text-color-light);
+}
+.prizes { 
+  grid-area: 4 / 1 / 5 / 2; 
+  background-color: var(--back-color-left);
+  color: var(--text-color-light);
+}
+.profile { 
+  grid-area: 2 / 2 / 5 / 3; 
+  background-color: var(--back-color-right);
+}
+
+.flex_resume{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+/*=============== profile__perfil ===============*/
+img {
+  width: 120px;
+  height: 120px;
+  border: 2px solid var(--color);
+  border-radius: 100%;
+}
+
+/*=============== profile-name ===============*/
+.profile-name{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+hr{
+  width: 20vw;
+  border-top: 1.2px dashed var(--dark-color);
+}
+
+/*=============== contact_me ===============*/
+/* ... */
+
+/*=============== skills ===============*/
+.skills_scale{
+  margin: 0.5rem;
+  color: var(--color-icon);
+}
+
+/*=============== prizes ===============*/
+/* ... */
+
+/*=============== profile ===============*/
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.profile>div{
+  margin: 0.5rem;
+}
+
+.gap>*{
+  /* margin between all child elements of div with class="gap" */
+  margin: 0.5rem auto 1rem auto;
+}
+
+.gap-child>*{
+  margin: 0.3rem auto 0.3rem auto;
+}
+
+.date{
+  color: rgb(173, 173, 173);
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width : 690px){
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+  .parent>div{
+    padding: 1.5rem;
+  }
+    
+  .profile__perfil{ 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: var(--back-color-right);
+  }
+
+  .profile-name { grid-area: 2 / 1 / 3 / 2; }
+  .contact_me { grid-area: 3 / 1 / 4 / 2; }
+  .skills { grid-area: 4 / 1 / 5 / 2; }
+  .prizes { grid-area: 5 / 1 / 6 / 2; }
+  .profile { grid-area: 6 / 1 / 7 / 2; }
+
+  .flex_resume{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+
+  .profile-name{
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,75 +1,224 @@
 <!DOCTYPE html>
-<html>
-
+    <html lang="FR">
     <head>
-        <link rel="stylesheet" href="styles.css">
-        <title> Matthew Josephson </title>
-        <link rel="shortcut icon" type= "image/x-icon" href="images/favicon.ico"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <!-- Insert your logo or à picture-->
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- Insert your name and job -->
+        <title>Matthew Josephson | Software Developer</title>
     </head>
+    <body class="grid">
+        <!--=============== MAIN ===============-->
+        <div class="parent container">
 
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    
-    <body>
+            <!-- your image -->
+            <div class="profile__perfil flex">
+                <!-- Insert your image, according to the example size of the resume -->
+                <img src="assets/img/headshot.jpg" alt="">
+            </div>
 
-        <table style="width: 1708px; margin-left: auto; margin-right: auto;">
-            <tbody>
-            <tr>
-            <td style="width: 933.883px;">
-            <table style="width: 915px; height: 700px;">
-            <tbody>
-            <tr>
-            <td style="width: 915px;">
-            <h1>Hi, I'm Matthew Josephson,</h1>
-            <h2>A Second Year Computer Science Student at Western University</h2>
-            <p>I am interested in UI/UX design and software design.</p>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </td>
-            <td style="width: 778.117px;">
-            <table style="width: 786.398px; height: 700px;">
-            <tbody>
-            <tr>
-            <td style="width: 786.398px;"><img src="images/headshot.jpeg" alt="Headshot" width="500" height="700" /></td>
-            </tr>
-            </tbody>
-            </table>
-            </td>
-            </tr>
-            <tr>
-            <td style="width: 933.883px;">&nbsp;</td>
-            <td style="width: 778.117px;">&nbsp;</td>
-            </tr>
-            <tr>
-            <td style="width: 933.883px;">
-            <p>Some of my skills and interests include:</p>
-            <table>
-            <tbody>
-            <tr>
-            <td>
-            <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Swift</li>
-            <li>Beginner HTML</li>
-            </ul>
-            </td>
-            <td>
-            <ul>
-            <li>Graphic Design</li>
-            <li>Mobile App Development</li>
-            </ul>
-            </td>
-            </tr>
-            </tbody>
-            </table>
-            </td>
-            <td style="width: 778.117px;">&nbsp;</td>
-            </tr>
-            </tbody>
-            </table>
+            <!-- your name and job -->
+            <div class="profile-name flex_resume">
+                <h1>MATTHEW JOSEPHSON</h1> 
+                <hr>
+                <h2>SOFTWARE DEVELOPER</h2>
+            </div>
+
+            <!-- contact -->
+            <div class="contact_me flex_resume">
+                <h4>CONTACT ME</h4>
+                <div class="flex address">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p>
+                        Western University <br> 
+                        London, ON
+                    </p>
+                </div>
+                <div class="flex email">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="">mjosephson717@gmail.com</a>
+                </div>
+                <div class="flex website">
+                    <i class="bi bi-laptop-fill"></i>
+                    <a href=""> www.matthewjosephson.ca</a>
+                </div>
+                <div class="flex linkedin">
+                    <i class="bi bi-linkedin"></i>
+                    <a href=""> @matthewjosephson</a>
+                </div>
+                
+            </div>
+
+            <!-- your skills -->
+            <div class="skills flex_resume">
+                <h4>OVERVIEW OF SKILLS</h4>
+                <div class="flex">
+                    <!-- 
+                        skill gauge rated out of 4
+                        ● = acquired
+                        ○ = not acquired
+                    -->
+                    <div class="skills_scale">●●●●</div>
+                    <p>
+                        <!-- Insert your skill, according to the example of the resume -->
+                        Python
+                    </p>
+                </div>  
+                <div class="flex">
+                    <div class="skills_scale">●●○○</div>
+                    <p>
+                       <!-- Insert your skill -->
+                       Java
+                    </p>
+                </div> 
+                <div class="flex">
+                    <div class="skills_scale">●●○○</div>
+                    <p>
+                        <!-- Insert your skill -->
+                        HTML
+                    </p>
+                </div> 
+                <div class="flex">
+                    <div class="skills_scale">●●○○</div>
+                    <p>
+                        <!-- Insert your skill -->
+                        CSS
+                    </p>
+                </div> 
+                <div class="flex">
+                    <div class="skills_scale">●●●○</div>
+                    <p>
+                        <!-- Insert your skill -->
+                        Ruby
+                    </p>
+                </div> 
+                <div class="flex">
+                    <div class="skills_scale">●●●○</div>
+                    <p>
+                        <!-- Insert your skill -->
+                        C
+                    </p>
+                </div> 
+            </div>
+
+             <!-- Insert your prizes. You can replace it with your hobbies, don't forget to change the icon-->
+            <div class="prizes flex_resume">
+                <h4>CERTIFICATIONS</h4>
+                <div class="flex">
+                    <i class="bi bi-award-fill"></i>
+                    <p>
+                        Ontario Smart Serve Certification <br>
+                        Smart Serve Ontario
+                    </p>
+                </div>
+                <div class="flex">
+                    <i class="bi bi-award-fill"></i>
+                    <p>
+                        OMHA Level 2c Certified Referee <br>
+                        Ontario Minor Hockey Association
+                    </p>
+                </div>
+                <div class="flex">
+                    <i class="bi bi-award-fill"></i>
+                    <p>
+                        Standard First Aid, CPR and AED <br>
+                        Canadian Red Cross
+                    </p>
+                </div>
+                <div class="flex">
+                    <i class="bi bi-award-fill"></i>
+                    <p>
+                        National Lifegaurd <br>
+                        Lifesaving Society Canada
+                    </p>
+                </div>
+                <div class="flex">
+                    <i class="bi bi-award-fill"></i>
+                    <p>
+                        Certified Water Safety Instructor <br>
+                        Canadian Red Cross
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- profile -->
+            <div class="profile">
+                <div class="gap">
+                   <h3>ABOUT ME</h3>
+                    <p>
+                        Hi, I'm Matt, a Second year Computer Science Student at Western University.
+                        I am interested in UI/UX design and software design, and have experiece as a full stack developer. 
+                        I am very interested in app creation, specifically with xCode for iOS. My other skills and interests include: 
+                        Python, Java, Swift, Beginner HTML, Graphic Design, Mobile App Development.
+                        
+                    </p> 
+                </div>
+
+                <div class="gap">
+                    <h3>EXPERIENCE</h3>
+                    <div class="gap-child">
+                       <span>Info-Tech Research Group</span>
+                        <p class="date">Co-Op Software Developer | May 2022 - Present</p>
+                        <p>
+                            I am currently working as a Full-stack software developer for Info-Tech Research Group.
+                            In this role, I am working on various systems and apps, both internal and external. 
+                            I have primarily been focusing on a stack consisting of: Ruby on Rails, VueJS, Javascript, HTML, CSS/SASS, MySQL, PostgreSQL and Node.js.
+                            Within an AGILE working environment, analyzing requirements, architecting solutions and developing strong, maintainable code.
+                            <br>
+
+                        </p>  
+                    </div>
+                    <div class="gap-child">
+                        <span>Austen Berlet Campout for Mental Health</span>
+                        <p class="date">Head Coordinator | February 2022 - Present</p>
+                        <p>
+                            During the 2021 - 2022 academic calendar I was promoted to lead a group of Western University students as the Head Coordinator for the Austen Berlet Campout.
+                            The Austen Berlet Campout for Mental Health is a mental health awareness philanthropy event in honour of Austen Berlet, a Western University student who took his life due to mental health.
+                            In this position I oversaw five committees and ensured they ran smoothly and accomplished weekly goals  set, and lead the logistics and operations of the event to run smoothly and successfully
+                            Due to the COVID pandemic, I innovated the event moving from online to in-person, while complying with COVID regulations by adapting the program.
+                            I successfully contacted and confirmed keynote speakers including Western University President Alan Shepard. 
+                            Ultimately the 11th Annual Austen Berlet Campout for Mental Health raised $13,115.00, which was directly donated to the Canadian Mental Health Association.
+                            For more information on the event, check out our facebook page: www.facebook.com/abccampout  
+                            <br>
+
+                        </p>  
+                    </div>
+                </div>
+
+                <div class="gap">
+                    <h3>EDUCATION</h3>
+                    <div class="gap-child">
+                        <span>Western University (UWO)</span>
+                         <p class="date">Honours Bachelor Degree in Computer Science (HBSc) |  Sept 2020 – Apr 2024</p>
+                         <p>
+                            <! Space for Info >
+                            <br>
+                         </p>  
+                    </div>
+                    <div class="gap-child">
+                        <span>Westside Secondary School</span>
+                         <p class="date">Ontario Secondary School Diploma | Sept 2016 - June 2020</p>
+                         <p>
+                            <!  Space for Info >
+                            
+                            <br>
+                            
+                         </p>  
+                    </div>
+                 </div>
+            </div>
+        </div>
 
     </body>
-
 </html>
