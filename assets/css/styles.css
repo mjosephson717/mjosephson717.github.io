@@ -208,6 +208,9 @@ hr{
   color: rgb(173, 173, 173);
 }
 
+/*See more button*/
+#more {display: none;}
+
 
 
 /*=============== BREAKPOINTS ===============*/

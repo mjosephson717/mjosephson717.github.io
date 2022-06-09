@@ -174,7 +174,7 @@
                             I am currently working as a Full-stack software developer for Info-Tech Research Group.
                             In this role, I am working on various systems and apps, both internal and external. 
                             I have primarily been focusing on a stack consisting of: Ruby on Rails, VueJS, Javascript, HTML, CSS/SASS, MySQL, PostgreSQL and Node.js.
-                            Within an AGILE working environment, analyzing requirements, architecting solutions and developing strong, maintainable code.
+                            Within an AGILE working environment, analyzing requirements, developing solutions and developing strong, maintainable code.
                             <br>
 
                         </p>  
@@ -184,17 +184,22 @@
                         <p class="date">Head Coordinator | February 2022 - Present</p>
                         <p>
                             During the 2021 - 2022 academic calendar I was promoted to lead a group of Western University students as the Head Coordinator for the Austen Berlet Campout.
-                            The Austen Berlet Campout for Mental Health is a mental health awareness philanthropy event in honour of Austen Berlet, a Western University student who took his life due to mental health.
-                            In this position I oversaw five committees and ensured they ran smoothly and accomplished weekly goals  set, and lead the logistics and operations of the event to run smoothly and successfully
+                            The Austen Berlet Campout for Mental Health is a mental health awareness philanthropy event in honour of Austen Berlet, 
+                            a Western University student who took his life due to mental health.
+                            In this position I oversaw<span id="dots">...</span><span id="more">
+                            five committees and ensured they ran smoothly and accomplished weekly goals  set, and lead the logistics and operations of the event to run smoothly and successfully
                             Due to the COVID pandemic, I innovated the event moving from online to in-person, while complying with COVID regulations by adapting the program.
                             I successfully contacted and confirmed keynote speakers including Western University President Alan Shepard. 
                             Ultimately the 11th Annual Austen Berlet Campout for Mental Health raised $13,115.00, which was directly donated to the Canadian Mental Health Association.
-                            For more information on the event, check out our facebook page: www.facebook.com/abccampout  
+                            For more information on the event, check out our facebook page: www.facebook.com/abccampout</span>
                             <br>
 
-                        </p>  
+                        </span></p>  
+
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
                     </div>
                 </div>
+
 
                 <div class="gap">
                     <h3>EDUCATION</h3>
@@ -219,6 +224,26 @@
                  </div>
             </div>
         </div>
+
+
+        <script>
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            </script>
+            
 
     </body>
 </html>
