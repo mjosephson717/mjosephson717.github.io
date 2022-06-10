@@ -27,7 +27,7 @@
   --smaller-font-size: .75rem;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 987px) {
   :root {
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -216,7 +216,7 @@ hr{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width : 690px){
+@media screen and (max-width : 687px){
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
